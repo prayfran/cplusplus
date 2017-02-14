@@ -1,0 +1,32 @@
+This is a lab about linked lists.
+
+-  Compile & link main.cc & ll.cc together.
+
+-  Create a Makefile so that you won't have to type g++ again.
+
+-  Run the resultant executable; observe how the program works.
+   Reading the code may help.
+
+-  Are there any memory leaks?  If so, fix them.
+
+-  Find uses of "this->", which are always suspicious.  Remove them.
+   Does everything still work?
+
+-  Methods named Initialize() sometimes indicate that the author
+   of the code doesn't understand constructors.  Turn them into ctors.
+
+-  Are your ctors using member initialization lists?  Make them do so.
+
+-  The method Delete() uses a pointer argument to return a value.
+   How crass--use a reference, instead.
+
+-  Add a method Print() that displays the list.  Add another case in main()
+   that uses it.
+
+For extra fame & glory:
+
+-  Are you SURE that you have no memory leaks?  What happens when
+   a LinkedList object is destroyed?  Fix that.
+
+-  Using Print() is tacky.  Overload the << operator so that you can use << 
+   on a LinkedList object, just like any other type.
